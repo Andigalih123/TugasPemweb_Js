@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah Tugas-02</title>
+
+    <script>
+        function kursrp(usd){
+            var datausd = parseInt(usd);
+
+            document.getElementById("hasilkonversi").innerHTML = datausd*14650
+        }
+    </script>
+</head>
+<body>
+    <h3> <b> Konversi Kurs Indonesia (1 USD = Rp.14.650) </b> </h3> 
+    <br>
+    Masukan USD : <input type="text" name="usd" onchange="kursrp(this.value)">
+    <br>
+    Hasil Rp.  <span id="hasilkonversi">........</span>
+</body>
+</html>
